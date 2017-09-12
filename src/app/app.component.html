@@ -32,7 +32,10 @@
     </li>
 </ul>
 
-<div *ngIf="selectedHero">
+<hero-detail [hero]="selectedHero"></hero-detail>
+
+<!-- details of selected hero is in hero-detail component -->
+<!-- <div *ngIf="selectedHero">
     <h2>{{selectedHero.name}} details!</h2>
     <div>
         <label>id: </label>
@@ -42,4 +45,4 @@
         <label>name: </label>
         <input [(ngModel)]="selectedHero.name" placeholder="name">
     </div>
-</div>
+</div> --> 
